@@ -1,0 +1,22 @@
+{
+  "name": "angular_react_project",
+  "description": "learning to use angular with react as view js",
+  "main": "app.html",
+  "license": "MIT",
+  "homepage": "app.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mdi": "^1.6.50",
+    "angular-material": "^1.0.8",
+    "angular": "^1.5.5",
+    "jquery": "^2.2.3",
+    "react": "^15.1.0"
+  }
+}
