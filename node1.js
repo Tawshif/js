@@ -9,12 +9,18 @@ function user() {
 
     }
 }
+
 var buckey = new user();
+
 var wendy = new user();
+
 buckey.name = "Buckey";
+
 wendy.name = "wendy";
+
 buckey.giveLife(wendy);
 console.log("Buckey:" + wendy.life);
+
 wendy.giveLife(buckey);
 console.log("Wendy:" + buckey.life);
 
