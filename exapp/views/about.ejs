@@ -6,12 +6,19 @@
   </head>
   <body>
     <% include templates/header.ejs %>
+  	
     <h1><%= title %></h1>
-    <p>Welcome to <%= name %></p>
-	<ul>
-		<% for(var i=0; i<5; i++) {%>
-			<li>Some data ....</li>
-		<% } %>
-	</ul>
+  
+
+    <ul>
+  		<% for(var i=0; i<5; i++) {%>
+  			<li><%= name %></li>
+  		<% } %>
+  	</ul>
+
+    <section>
+      <p><%= description %></p>
+    </section>
+
   </body>
 </html>
