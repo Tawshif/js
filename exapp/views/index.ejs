@@ -6,12 +6,18 @@
   </head>
   <body>
     <% include templates/header.ejs %>
+    
     <h1><%= title %></h1>
-    <p>Welcome to <%= name %></p>
-	<ul>
-		<% for(var i=0; i<5; i++) {%>
-			<li>Some data ....</li>
-		<% } %>
+    <h3>Welcome to <%= videodata.categoryName %></h3>
+
+	<ul >
+		<% videodata.categories.forEach(function (item) { %>
+				<li>
+					<a href="https://www.thenewboston.com/videos_food.php?cat=<%= item.categoryID %>">
+						<%= item.categoryName %>
+					</a>
+				</li>		
+		<% }); %>
 	</ul>
 
   </body>
